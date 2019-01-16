@@ -17,7 +17,7 @@
                                 <li><i class="fas fa-user"></i> <?php echo $this->session->userdata['user_data']['email'] ?></li>    
                                 <li><a href="<?php echo base_url('page/logout')?>"><i class="fas fa-sign-out-alt"></i><span class="header-link-label">&nbsp;Log out</span></a></li>
                                 <li>
-                                    <a href="<?php echo base_url() . 'page/wish_list_view' ?>">
+                                    <a href="<?php echo base_url() . 'page/user_wishlist' ?>">
                                         <i class="fa fa-heart header-link-icon"></i>
                                         <span class="wishlist-label header-link-label">Wishlist</span>
                                         <span class="wishlist-qty">(0)</span>

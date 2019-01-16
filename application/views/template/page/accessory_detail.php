@@ -39,9 +39,9 @@
                                                 <input type="number" id="quantity_5c171ca58f6f0" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="">
                                             </div> 
                                             <button type="submit" class="single_add_to_cart_button button alt disabled wc-variation-selection-needed"><i class="fas fa-cart-plus"></i> Add to cart</button>
-                                            <div class="yith-wcwl-add-to-wishlist add-to-wishlist-1336">
+                                            <div class="yith-wcwl-add-to-wishlist add-to-wishlist-1336 add-wishlist <?php echo @$user_wishlist->status === '1' ? 'active': '' ?>" data-acc-id="<?php echo $result->acs_id ?>">
                                                 <div class="yith-wcwl-add-button show" style="display:block"> 
-                                                    <a href="" rel="nofollow" data-product-id="1336" data-product-type="variable" class="add_to_wishlist"><i class="far fa-heart"></i></a>
+                                                    <a href="<?php echo 'page/user_wishlist' ?>" rel="nofollow" data-product-id="1336" zdata-product-type="variable" class="add_to_wishlist"><i class="far fa-heart"></i></a>
                                                     <span class="ajax-loading"></span>
                                                 </div>
                                             </div>

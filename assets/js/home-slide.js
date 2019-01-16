@@ -48,6 +48,7 @@
                 }
             };
 
+            if ($('#jssor_1').length) {
                 var jssor_1_slider = new $JssorSlider$("jssor_1", options);
 
                 //responsive code begin
@@ -66,4 +67,6 @@
                 $(window).bind("resize", ScaleSlider);
                 $(window).bind("orientationchange", ScaleSlider);
                 //responsive code end
-            });
+            }
+                
+        });

@@ -92,10 +92,7 @@ class M_page extends CI_Model {
         $this->db->where('id', $id);
         $this->db->delete('add_to_cart');
     }
-
-    // By Captain Rith
-
-
+   
     /// pagination accessories
     function get_count_accessory() {
 
@@ -380,6 +377,33 @@ class M_page extends CI_Model {
         $result = $query->row();
         return $result->id;
     }
+
+//Add  USER WISH LIST 
+    function user_wishlist($data){
+        $this->db->insert('user_wishlist', $data);
+    }
+
+    function update_user_wishlist($data) {
+        return $this->db->set('status', $data['status'])
+                        ->set('update_at', $data['updated_at'])
+                        ->where('user_id', $data['user_id'])
+                        ->where('asc_id', $data['asc_id'])
+                        ->update('user_wishlist');
+    }
+
+    function get_user_wishlist($userId, $ascId, $opts) {
+        $this->db->from('user_wishlist');
+        $this->db->where('user_id', $userId);
+        $this->db->where('asc_id', $ascId);
+        
+        if ($opts['object']) {
+            return $this->db->get()->row();
+        }
+
+        return $this->db->get()->num_rows();
+    }
+// USER WISH LIST 
+    
 
     function add_to_cart($data){
         $this->db->insert('add_to_cart', $data);

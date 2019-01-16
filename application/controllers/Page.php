@@ -147,9 +147,13 @@ class Page extends CI_Controller {
     }
 
     public function accessory_detail($id){
+        $userId = $this->session->userdata['user_data']['userid'];
         $data['accessory'] = $this->m_page->get_accessory_by($id);
+        $data['user_wishlist'] = $this->m_page->get_user_wishlist($userId, $id, array('object' => true));
+        
         $this->load->view('template/index', $data);
     }
+
     public function addtocard($id){
         if (isset($this->session->userdata['logged_in'])) {   
             $data = $this->m_page->get_accessory_by($id);
@@ -242,10 +246,36 @@ class Page extends CI_Controller {
 
 
     // Wihs List view
-    public function wish_list_view(){
-       $this->load->view('template/index');
+    public function user_wishlist(){
+        $user = $this->session->userdata['user_data'];
+
+        if (!$user) return array('code' => 403, 'msg' => 'Unauthorized');
+        
+        $clientData = array(
+            'user_id' => $user['userid'],
+            'asc_id' => $this->input->post('acc_id'),
+            'status' => ($this->input->post('status') === 'true'),
+            'created_at' => (new DateTime())->format('Y-m-d H:i:s')
+        );
+
+        //Check if user already add to wishlist
+        if ($this->isUserInWishlist($clientData['user_id'], $clientData['asc_id']) > 0) {
+            // Update user wishlist status
+            $clientData['updated_at'] = (new DateTime())->format('Y-m-d H:i:s');
+            $this->m_page->update_user_wishlist($clientData);
+        } else {
+            // create user wishlist
+            $this->m_page->user_wishlist($clientData);
+        }
+
+        return array('code' => 200, 'msg' => 'success');
     }
     //
+
+    private function isUserInWishlist($userId, $ascId) {
+        // find user in wishlist
+        return $this->m_page->get_user_wishlist($userId, $ascId);
+    }
 
     public function cardupdate(){
         $amount = $_GET['amount'];

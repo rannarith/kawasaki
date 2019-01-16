@@ -1039,6 +1039,11 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 .yith-wcwl-add-to-wishlist.add-to-wishlist-1336 {
     display: inline-block;
 }
+
+.yith-wcwl-add-to-wishlist.add-to-wishlist-1336.active {
+    background-color: red;
+}
+
 .fa-heart:before {
     content: "\f004";
     color: white;
