@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+<configuration date="2017/10/24" author="e.World Technology Ltd.">
+<project id="{5CB4AA5B-9E5D-4D28-80A0-11AF7C90D6A1}" file="D:\HGB Group\Kawasaki\admin1.pmp" name="admin1" product="PHPMaker" version="9.0" datetime="2017/10/24 11:16:42" languagefolder="phplang" userlevel="0,&quot;Default&quot;,0">
+<table id="accessory" name="accessory" caption="accessory" userlevel="0,&quot;Default&quot;,0" priv="1"/>
+<table id="contact" name="contact" caption="contact" userlevel="0,&quot;Default&quot;,0" priv="1"/>
+<table id="feature" name="feature" caption="feature" userlevel="0,&quot;Default&quot;,0" priv="1"/>
+<table id="model" name="model" caption="model" userlevel="0,&quot;Default&quot;,0" priv="1"/>
+<table id="model_category" name="model_category" caption="model category" userlevel="0,&quot;Default&quot;,0" priv="1"/>
+<table id="model_gallery" name="model_gallery" caption="model gallery" userlevel="0,&quot;Default&quot;,0" priv="1"/>
+<table id="news" name="news" caption="news" userlevel="0,&quot;Default&quot;,0" priv="1"/>
+<table id="promotion" name="promotion" caption="promotion" userlevel="0,&quot;Default&quot;,0" priv="1"/>
+<table id="admin_user" name="admin_user" caption="admin user" userlevel="0,&quot;Default&quot;,0" priv="1"/>
+<table id="news_gallery" name="news_gallery" caption="news gallery" userlevel="0,&quot;Default&quot;,0" priv="1"/>
+<table id="home_slide" name="home_slide" caption="home slide" userlevel="0,&quot;Default&quot;,0" priv="1"/>
+<table id="about_gallery" name="about_gallery" caption="about gallery" userlevel="0,&quot;Default&quot;,0" priv="1"/>
+<table id="company_info" name="company_info" caption="company info" userlevel="0,&quot;Default&quot;,0" priv="1"/>
+<table id="model_color" name="model_color" caption="model color" userlevel="0,&quot;Default&quot;,0" priv="1"/>
+<table id="specification" name="specification" caption="specification" userlevel="0,&quot;Default&quot;,0" priv="1"/>
+<table id="career" name="career" caption="career" userlevel="0,&quot;Default&quot;,0" priv="1"/>
+<table id="form_request" name="form_request" caption="form request" userlevel="0,&quot;Default&quot;,0" priv="1"/>
+</project></configuration>

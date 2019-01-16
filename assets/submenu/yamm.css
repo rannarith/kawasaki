@@ -1,0 +1,78 @@
+/*!
+ * Yamm!3 - Yet another megamenu for Bootstrap 3
+ * http://geedmo.github.com/yamm3
+ * 
+ * @geedmo - Licensed under the MIT license
+ */
+.yamm .nav,
+.yamm .collapse,
+.yamm .dropup,
+.yamm .dropdown {
+  position: static;
+}
+.yamm .container {
+  position: relative;
+}
+.yamm .dropdown-menu {
+
+}
+ .yamm .yamm-content {
+    
+  padding: 0px 30px;
+}
+.navbar-nav > li > .top-dropdown {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 0px;
+    
+}
+
+.yamm .dropdown.yamm-fw .dropdown-menu {
+  left: 0;
+  right: 0;
+}
+
+.dropdown .dropdown-menu {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.dropdown.open .dropdown-menu {
+    max-height: 6000px;
+    opacity: 1;
+    width: 100%;
+    padding: 0;
+    padding-top: 20px;
+    background: #000;
+}
+
+.tab-content {
+   padding-top: 15px;
+}
+
+.menu-tab > li.active > a, .menu-tab > li.active > a:focus, .menu-tab > li.active > a:hover {
+     -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none;
+    border: 0;
+    color: #69BD27;
+    cursor: default;
+    border-bottom: 3px solid #69be28;
+    
+}
+
+.container .collapse .nav li ul li.active a{
+    color: #69be28;
+    font-weight: bold;
+}
+

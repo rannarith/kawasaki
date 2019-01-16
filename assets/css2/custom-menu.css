@@ -1,0 +1,405 @@
+body {
+    /*padding-top: 135px;*/
+}
+
+.top_nav {
+    font-family: league_gothicregular;
+}
+
+.clear {
+    clear: both;
+}
+.top-fb:hover {
+    color: #fff;
+}
+
+.kw-bg {
+    background: #69be28;
+    color: #fff;
+}
+
+.top-header {
+    background: #F9F9F9;
+}
+
+.top-menu li:first-child{
+    padding-left: 0 !important;
+}
+
+.navbar-custom {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    /*    background: #000000;*/
+    background:  url('../images/bg_header.png') top  repeat-x;
+    border: 0;
+    /*    border-bottom: 3px solid #69BF2A;*/
+    padding:0px;
+    /*    padding-top: 35px;*/
+    padding-bottom: 0px;
+}
+.navbar { 
+    margin-bottom: 0;
+}
+.container .collapse .nav li a{
+    color: #fff;
+    font-size: 19px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+    background: none !important;
+    /*    color: #69BD27 !important;*/
+}
+
+.model_top_menu {
+    padding-left: 30px;
+    margin-top: 15px;
+}
+
+.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:hover {
+    color: #69be28;
+    /* text-decoration: underline;*/
+    background: none;
+}
+
+.navbar-custom .navbar-nav > .open > a, .navbar-custom .navbar-nav > .open > a:focus, .navbar-custom .navbar-nav > .open > a:hover , .container .collapse .nav li.actives a , .container .collapse .nav li a:hover {
+    color: #69be28;
+    /* text-decoration: underline;*/
+    background: none;
+}
+
+.navbar-logo {
+    padding: 0px;
+}
+
+.navbar-toggle {
+    background: #69BD27;
+    border: 0;
+}
+
+.thumbnail {
+    border: 0;
+    background: none;
+    margin-bottom: 5px;
+}
+
+.model_top_menu .menu-tab {
+    border-bottom: 1px solid #eceded;
+}
+.model_top_menu .menu-tab li a {
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #666666;
+}
+
+
+.model_top_menu {
+    font-family: 'league_gothicregular' , 'Hanuman';
+    font-size: 20px;
+    color: #666666;
+}
+
+.hold-thumb  {
+ 
+}
+
+.hold-thumb .thumb-menu {
+    padding-bottom: 20px;
+    /*    background: #000 none repeat scroll 0 0;*/
+    
+    border: 1px solid #ffffff;
+    
+    border-left: 1px solid #ffffff;
+    border-bottom: 5px solid #ffffff;
+}
+
+.tab-pane:nth-child(2n+1) .thumb-menu  {
+    border-left: 1px solid #ffffff;
+}
+
+.tab-pane .thumb-menu:first-child {
+    border-left: 1px solid #ffffff;
+}
+.tab-pane .thumb-menu:hover {
+    /*     border-right: 1px solid #eceded;*/
+    border-color: #eceded;
+    border-bottom-color: #69be28;
+
+}
+.tab-pane .thumb-menu:hover a.model-title{
+    /*    color: #66cc33;*/
+}
+.tab-pane .thumb-menu {
+    text-align: center;
+}
+
+.nav-tabs > li > a:hover {
+    border: 1px;
+    text-decoration: none;
+}
+
+.h-slide {
+    width: 100%;
+}
+
+.menu-footer {
+    background: #000;
+}
+
+.menu-footer .container .row  .mn-footer {
+    margin: 0;
+    float: left;
+    padding-top: 40px;
+}
+
+.menu-footer .container .row  .mn-footer li{
+    list-style: none;
+    display: inline;
+    padding: 5px 20px 5px 0px;
+}
+
+.menu-footer .container .row  .mn-footer li a  {
+    font-family: 'league_gothicregular', 'Kanit', sans-serif , 'Hanuman';
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.menu-footer .container .row  .mn-footer li a:hover  {
+    color: #6ABE28;
+    text-decoration: none;
+}
+
+.hold-footer {
+    padding: 30px;
+    background: #000;
+    margin-top: 30px;
+    border-top: 1px solid #355F14;
+}
+
+.hold-footer p {
+    color: #fff;
+}
+
+/*fix right menu*/
+.fix-rightmenu {
+    position: fixed;
+    right: 0;
+    z-index: 300;
+    top: 30%;
+}
+.fix-rightmenu .rightmn ul {
+    list-style-position: inside;
+    list-style-type: circle;
+}
+.fix-rightmenu .rightmn ul li{
+    display: block;
+}
+
+.top-search .form-group input , .top-search button{
+    background: #ffffff !important;
+    border: 0;
+}
+
+.copyright {
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 500px){
+    body {
+        padding-top: 0px;
+    }
+    .navbar-fixed-top {
+        position: relative;
+    }
+    .top-search {
+        display: none;
+    }
+    .social-top-menu {
+        /*   display: none;*/
+    }
+}
+
+@media only screen and (max-width: 768px){
+    body {
+        padding-top: 0px;
+    }
+    .navbar-fixed-top {
+        position: relative;
+    }
+    .top-search {
+        display: none;
+    }
+    .social-top-menu {
+        /*        display: none;*/
+    }
+}
+@media only screen and (max-width: 1024px){
+    body {
+        padding-top: 0px;
+    }
+    .navbar-fixed-top {
+        position: relative;
+    }
+    .social-top-menu {
+
+    }
+}
+
+/* home new update tab
+*/
+/* model detail */
+.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:hover {
+    border: 0;
+}
+
+.home_tab > li > a {
+    color: #7e7e7e;
+    font-size: 28px;
+    font-family: 'league_gothicregular' , 'Hanuman';
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 0;
+    background: none !important;
+    border: 0 !important;
+    border-right: 1px solid #ccc !important;
+}
+.home_tab > li:last-child > a {
+    border-right: 1px solid transparent !important;
+}
+.home_tab > li.active > a, .home_tab > li.active > a:focus, .home_tab > li.active > a:hover,.home_tab > li:hover > a  { 
+    color: #7e7e7e;
+    background: none !important;
+    border: 0;
+}
+.home_tab li { 
+    padding-right: 30px;
+}
+
+.home_tab_content .tab-pane {
+    background: #141414;
+}
+.nav-tabs>li.active>a, .nav-tabs> li.active> a:focus, .nav-tabs>li.active>a:hover {
+/*    background: none !important;*/
+}
+
+
+/* model detail */
+.md_features > li.active > a, .md_features > li.active > a:focus, .md_features > li.active > a:hover,.md_features > li:hover > a  { 
+    color: #69BF2A;
+    background: none !important;
+    border: 0;
+    border: 2px solid transparent;
+    border-bottom-color: #69be28;
+    border-bottom-width: 2px;
+}
+.md_features li { 
+    padding-right: 30px;
+}
+
+.md_features li a {
+    font-size: 24px;
+    font-family: 'league_gothicregular' , 'Hanuman';
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 0;
+}
+
+.md_feature_content .tab-pane {
+    background: #141414;
+}
+
+.btn-top-search {
+    background: #4D4D52;
+    border-color: #4D4D52;
+    color: #ffffff;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+/*dropdown menu*/
+
+.dropdown-menu {
+    background: #000;
+}
+
+.about-list li , .about-list li:first-child {
+    border: 0;
+    
+    border-bottom: 1px solid #69be28 !important;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+    list-style: none;
+    padding: 10px;
+    font-weight: bold;
+    padding-left: 0;
+}
+
+.about-list li a:hover , .about-list li a.active{
+    color: #68BF2B;
+}
+
+/* home event , socia, blog new update */
+.home_title {
+    font-size: 36px;
+    color: #a9a9a9;
+    font-weight: bold;
+    display: block;
+}
+
+.home_title:hover {
+    color: #69be28;
+}
+.home_title_small
+{
+    font-size: 20px;
+    font-family:  'league_gothicregular' , 'Hanuman';
+    color: #69be28;
+}
+
+/* map responsive */
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* btn view dealer info */
+.btn_view_dealer {
+    color: #69BF2A;
+    font-family: 'league_gothicregular' , 'Hanuman'; 
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+/* scroll to top */
+.scrollTop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background: #000;
+  padding:4px 6px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+  -webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;
+}
+.scrollTop a img {
+    height: 13px;
+    width: 28px;
+}
